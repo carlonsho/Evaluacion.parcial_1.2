@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - Ropa Deportiva</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #008080;
+            color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #008080;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: calc(33% - 20px);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        footer {
+            background-color: #008080;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ropa Deportiva</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Galería</h1>
+        <div class="gallery">
+            <img src="images/terminator.jpg" alt="terminator">
+            <img src="images/adonys.jpg" alt="adonys">
+            <img src="images/adoniscreed.jpg" alt="adoniscreed">
+            <img src="images/busomujer.jpg" alt="busomujer">
+            <img src="images/gymshark.jpg" alt="gymshark">
+            <img src="images/esmediaz.jpg" alt="esmediaz">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ropa Deportiva. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
